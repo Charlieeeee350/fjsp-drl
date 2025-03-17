@@ -77,7 +77,7 @@ def main():
     valid_results_100 = []
     data_file = pd.DataFrame(np.arange(10, 1010, 10), columns=["iterations"])
     data_file.to_excel(writer_ave, sheet_name='Sheet1', index=False)
-    writer_ave.save()
+    writer_ave._save()
     writer_ave.close()
     data_file = pd.DataFrame(np.arange(10, 1010, 10), columns=["iterations"])
     data_file.to_excel(writer_100, sheet_name='Sheet1', index=False)
